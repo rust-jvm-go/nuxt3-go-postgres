@@ -6,11 +6,19 @@
 *.test
 *.out
 
+webapp/.nuxt
 webapp/node_modules
+webapp/*.log*
+webapp/.nitro
+webapp/.cache
+webapp/.output
+webapp/.env
+webapp/dist
 webapp/build
-webapp/npm-debug.log*
 
 .idea/
 .iml
 
 .vscode/
+
+.DS_Store
