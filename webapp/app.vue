@@ -19,17 +19,18 @@
   </div>
 </template>
 
-<script>
-import TechItems from './components/TechItems.vue'
+<script lang="ts">
+import TechItems from "./components/TechItems.vue"
+import logo from "@/assets/logo.svg"
 
 export default {
-  name: 'App',
+  name: "app",
   components: {
     TechItems
   },
   data() {
     return {
-      logoSVG: require('./assets/logo.svg')
+      logoSVG: logo
     }
   }
 };

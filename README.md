@@ -23,7 +23,7 @@ docker-compose --version
 In the project directory run the command (you might
 need to prepend it with `sudo` depending on your setup):
 ```sh
-docker-compose -f docker-compose-dev.yml up
+docker-compose -f docker-compose-yugabytedb.yml up
 ```
 
 This starts a local PostgreSQL database on `localhost:5432`.

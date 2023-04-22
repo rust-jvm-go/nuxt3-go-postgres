@@ -6,8 +6,10 @@
   </ul>
 </template>
 
-<script>
+<script lang="ts">
 import axios from 'axios'
+
+let publicApiBaseUrl;
 
 export default {
   name: 'TechItems',
@@ -16,9 +18,14 @@ export default {
       technologies: []
     };
   },
+  setup() {
+    let runtimeConfig = useRuntimeConfig();
+    publicApiBaseUrl = runtimeConfig.public.apiBaseUrl;
+  },
   mounted() {
+    console.log(`publicApiBaseUrl: ${publicApiBaseUrl}`)
     axios
-      .get(`${process.env.VUE_APP_API_URL}/api/technologies`)
+      .get(`${publicApiBaseUrl}/api/technologies`)
       .then(response => (this.technologies = response.data));
   }
 };
