@@ -21,7 +21,7 @@
 
 <script lang="ts">
 import TechItems from "./components/TechItems.vue"
-import logo from "@/assets/logo.svg"
+import logo from "@/assets/images/logo.svg?url"
 
 export default {
   name: "app",
