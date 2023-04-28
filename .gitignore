@@ -22,3 +22,6 @@ webapp/build
 .vscode/
 
 .DS_Store
+
+.env
+*/**/.env

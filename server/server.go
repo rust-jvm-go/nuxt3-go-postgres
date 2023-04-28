@@ -29,11 +29,11 @@ func main() {
 
 func dataSource() string {
 	host := "localhost"
-	pass := "yugabyte"
+	pass := "nuxt3go"
 	if os.Getenv("profile") == "prod" {
 		host = "db"
 		pass = os.Getenv("db_pass")
 	}
 	return "postgresql://" + host + ":5433/nuxt3go" +
-		"?user=yugabyte&sslmode=disable&password=" + pass
+		"?user=nuxt3go&sslmode=disable&password=" + pass
 }
